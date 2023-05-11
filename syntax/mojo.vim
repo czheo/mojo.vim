@@ -12,10 +12,11 @@ endif
 " include python syntax
 runtime syntax/python.vim
 
-syn keyword mojoKeywords struct fn let var
-syn match mojoName '\<\w\+\>' contained
-syn match mojoRefName '\<\w\+\>&' contains=mojoName
-syn region mojoIndexDialect start="`" end="`"
+syn keyword mojoKeywords let var
+syn keyword mojoKeywords struct fn nextgroup=mojoName skipwhite
+syn match mojoName '\h\w*' display contained
+syn match mojoRefName '\h\w*&' display contains=mojoName
+syn region mojoIndexDialect start="`" end="`" display
 
 hi def link mojoKeywords Keyword
 hi def link mojoRefName Identifier
