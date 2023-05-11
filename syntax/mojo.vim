@@ -10,8 +10,7 @@ elseif exists("b:current_syntax")
 endif
 
 " include python syntax
-let path = expand('<sfile>:p:h')
-exec 'source' path . '/include/mojo_python.vim'
+runtime syntax/python.vim
 
 syn keyword mojoKeywords struct fn let var
 syn match mojoName '\<\w\+\>' contained
