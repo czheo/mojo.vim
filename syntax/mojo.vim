@@ -4,9 +4,9 @@
 " Latest Revision: 10 May 2023
 
 if version < 600
-    syntax clear
+  syntax clear
 elseif exists("b:current_syntax")
-    finish
+  finish
 endif
 
 " include python syntax
