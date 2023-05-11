@@ -16,10 +16,10 @@ syn keyword mojoKeywords let var
 syn keyword mojoKeywords struct fn nextgroup=mojoName skipwhite
 syn match mojoName '\h\w*' display contained
 syn match mojoRefName '\h\w*&' display contains=mojoName
-syn region mojoIndexDialect start="`" end="`" display
+syn region mojoDialect start="`" end="`" display
 
 hi def link mojoKeywords Keyword
 hi def link mojoRefName Identifier
-hi def link mojoIndexDialect Special
+hi def link mojoDialect Special
 
 " vim:set sw=2 sts=2 ts=8 noet:
