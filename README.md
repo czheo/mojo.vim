@@ -1,4 +1,4 @@
-Mojo Syntax Highlighting for Vim
+[Mojo](https://github.com/modularml/mojo) Syntax Highlighting for Vim
 
 How to install
 --------------
