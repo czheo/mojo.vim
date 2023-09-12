@@ -12,7 +12,7 @@ endif
 " include python syntax
 runtime syntax/python.vim
 
-syn keyword mojoKeywords let var inout owned borrowed
+syn keyword mojoKeywords let var inout owned borrowed alias
 syn keyword mojoKeywords struct fn nextgroup=mojoName skipwhite
 syn match mojoName '\h\w*' display contained
 syn match mojoRefName '\h\w*&' display contains=mojoName
