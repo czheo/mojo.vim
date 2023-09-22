@@ -11,3 +11,8 @@ Use one of the following plugin managers:
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [vundle](https://github.com/VundleVim/Vundle.vim)
 * [pathogen](https://github.com/tpope/vim-pathogen)
+
+Here is an example using vim-plug.
+```
+Plug 'czheo/mojo.vim'
+```
